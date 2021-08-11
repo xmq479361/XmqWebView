@@ -1,0 +1,5 @@
+rootProject.name = "WebViewBoost"
+include ':app'
+include ':WebContainer'
+include ':webmodule'
+include ':BasicFramework'

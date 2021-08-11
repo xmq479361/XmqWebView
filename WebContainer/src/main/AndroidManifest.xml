@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xmq.web">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application>
+        <service android:name="com.xmq.web.mainprocess.MainProcessCommandService"/>
+        <activity android:name=".webprocess.WebContainerActivity"
+            android:process=":web"/>
+        <service android:name=".webprocess.WebProcessCommandService"
+            android:process=":web"/>
+    </application>
+</manifest>
